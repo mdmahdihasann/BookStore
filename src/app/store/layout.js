@@ -1,4 +1,5 @@
 import Sidebar from "@/components/sidebar/Sidebar";
+import CartAddProver from "@/provider/CartAddProver";
 
 export const metadata = {
     title: "Store - Buy or Rent Books",
@@ -10,8 +11,10 @@ export default function BookStoreLayout({ children }) {
 
         <div className="h-screen bg-gray-300">
             <div className="grid grid-cols-1 sm:grid-cols-[160px_1fr] gap-8 p-3">
-                <Sidebar/>
-                {children}
+                <CartAddProver>
+                    <Sidebar />
+                    {children}
+                </CartAddProver>
             </div>
         </div>
     );
