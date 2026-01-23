@@ -1,9 +1,7 @@
-import React from 'react'
+import BookDetails from "./BookDetails";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+const Page = () => {
+  return <BookDetails />
+};
 
-export default page
+export default Page;

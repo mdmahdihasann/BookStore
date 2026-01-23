@@ -1,7 +1,7 @@
 "use client"
-import CartItems from '@/components/CartInfo/CartItems'
-import CartTotal from '@/components/CartInfo/CartTotal'
-import PaymentFrom from '@/components/CartInfo/PaymentFrom'
+import CartItems from '@/components/OrderDetails/CartItems'
+import CartTotal from '@/components/OrderDetails/CartTotal'
+import PaymentFrom from '@/components/OrderDetails/PaymentFrom'
 import ProductAddCart from '@/hooks/ProductAddCart'
 import React, { useState } from 'react'
 
