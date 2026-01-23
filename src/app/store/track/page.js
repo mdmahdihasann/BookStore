@@ -1,8 +1,9 @@
 import React from 'react'
+import TrackSection from './TrackSection'
 
 const page = () => {
   return (
-    <div>page</div>
+    <TrackSection/>
   )
 }
 

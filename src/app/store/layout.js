@@ -10,7 +10,7 @@ export default function BookStoreLayout({ children }) {
     return (
 
         <div className="h-screen bg-gray-300">
-            <div className="grid grid-cols-1 sm:grid-cols-[160px_1fr] gap-8 p-3">
+            <div className="grid grid-cols-1 sm:grid-cols-[160px_1fr] gap-4 p-3">
                 <CartAddProver>
                     <Sidebar />
                     {children}

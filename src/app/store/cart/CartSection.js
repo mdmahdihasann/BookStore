@@ -17,19 +17,19 @@ const CartSection = () => {
             <div >
 
                 {
-                    cartAdd.length > 0 ? <CartItems cartAdd={cartAdd} /> : <div className='bg-white text-center h-46 rounded-lg text-red-500 flex items-center justify-center'>Product Cart Not Added</div>
+                    cartAdd?.length > 0 ? <CartItems cartAdd={cartAdd} /> : <div className='bg-white text-center h-46 rounded-lg text-red-500 flex items-center justify-center'>Product Cart Not Added</div>
                 }
             </div>
             {/* cart total */}
             <div>
                 {
-                    cartAdd.length > 0 ? <CartTotal cartAdd={cartAdd} handleCheckout={handleCheckout} /> : <div className='bg-white h-46 rounded-lg text-center text-red-500 flex items-center justify-center'>Product Cart Not Added</div>
+                    cartAdd?.length > 0 ? <CartTotal cartAdd={cartAdd} handleCheckout={handleCheckout} /> : <div className='bg-white h-46 rounded-lg text-center text-red-500 flex items-center justify-center'>Product Cart Not Added</div>
                 }
             </div>
             {/* payment from */}
             <div>
                 {
-                    isFromShow === true ? <PaymentFrom /> : <div className='bg-white h-46 rounded-lg text-red-500 flex items-center text-center justify-center'>Payment From Not Found! Before Click Checkout Button Than Show From</div>
+                    isFromShow === true ? <PaymentFrom /> : <div className='bg-white h-46 rounded-lg text-red-500 flex items-center text-center justify-center p-4'>Payment From Not Found! Before Click Checkout Button Than Show From</div>
                 }
             </div>
         </div>

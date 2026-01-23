@@ -1,5 +1,6 @@
 "use client"
 import ProductAddCart from "@/hooks/ProductAddCart";
+import Image from "next/image";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import { toast } from "react-toastify";
 
@@ -16,10 +17,15 @@ const CartItems = ({ cartAdd }) => {
       {
         cartAdd?.map(cartData => (
           <div key={cartData.id} className='bg-gray-200 rounded-lg p-4 flex flex-row justify-between items-center'>
-            <div>
-              <h4 className='text-lg font-semibold'>{cartData?.title}</h4>
-              <p className='text-sm font-medium'>Price: {cartData?.type === "buy" ? cartData?.sellPrice : cartData?.rentPrice}$</p>
-              <p className='text-sm font-medium'>Type:  {cartData?.type}</p>
+            <div className="flex gap-2">
+              <div>
+                <Image src={cartData.cover} height={50} width={50} className="rounded-lg" alt={cartData?.title}/>
+              </div>
+              <div>
+                <h4 className='text-lg font-semibold'>{cartData?.title}</h4>
+                <p className='text-sm font-medium'>Price: {cartData?.type === "buy" ? cartData?.sellPrice : cartData?.rentPrice}$</p>
+                <p className='text-sm font-medium'>Type:  {cartData?.type}</p>
+              </div>
             </div>
             {/* action */}
             <div>

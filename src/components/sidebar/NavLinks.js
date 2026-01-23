@@ -21,7 +21,6 @@ const links = [
 
 const Navbar = () => {
   const {cartAdd} = ProductAddCart();
-  console.log(cartAdd);
   
   return (
     <>
