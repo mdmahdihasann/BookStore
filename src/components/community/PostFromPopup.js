@@ -29,7 +29,7 @@ const PostFromPopup = () => {
                     padding: "19px 10px",
                     gap: "6px",
                     width: "130px",
-                    fontSize: "16px;"
+                    fontSize: "16px;",
                 }}
             >
                 Create Post <FaPlus />
