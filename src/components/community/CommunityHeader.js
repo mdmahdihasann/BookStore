@@ -1,9 +1,9 @@
-import { FaPlus } from "react-icons/fa6";
 import { FaSearchPlus } from "react-icons/fa";
+import PostFromPopup from "./PostFromPopup";
 const CommunityHeader = () => {
     return (
         <div className="flex items-center gap-4 mb-4.5">
-            <div class="bg-gray-200 rounded-sm flex gap-2 pr-1 items-center justify-between w-full">
+            <div className="bg-gray-200 rounded-sm flex gap-2 pr-1 items-center justify-between w-full">
                 <input
                     type="text"
                     className='w-full py-2 px-4 bg-transparent outline-none focus:outline-none focus:ring-0'
@@ -14,7 +14,8 @@ const CommunityHeader = () => {
                 </button>
             </div>
             <div>
-                <button className="flex w-[136px] items-center justify-between gap-1.5 bg-purple-600 rounded-sm px-4 py-2 text-white hover:bg-purple-500 transition cursor-pointer">Create Post <FaPlus /></button>
+                
+                <PostFromPopup/>
             </div>
         </div>
 

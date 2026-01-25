@@ -6,7 +6,12 @@ const CommunitySection = () => {
     return (
         <>
             <CommunityHeader />
-            <CommunityPost/>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+                <CommunityPost/>
+                <CommunityPost/>
+                <CommunityPost/>
+            </div>
+            
         </>
     )
 }
